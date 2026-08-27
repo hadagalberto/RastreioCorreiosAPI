@@ -15,7 +15,7 @@ env:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Linux, x64]
     steps:
       - name: 'Checkout GitHub Action'
         uses: actions/checkout@v2
